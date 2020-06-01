@@ -1,0 +1,500 @@
+body {
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    
+    display: inline-block;
+}
+.menu {
+    margin-left: 80%;
+}
+
+
+header {
+    background-image: url(images/pic0.jpg);
+    height: 950px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5%;
+    background-position: center;
+    vertical-align: middle;
+}
+header .logo a {
+  background-image: url(images/logo.png);
+  background-size: 80px;
+  background-repeat: no-repeat;
+  border-radius: 90%;
+  display: inline-block;
+  height: 80px;
+  text-indent: -9999999px ;
+  width: 300px;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; 
+    width: 0;
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9); 
+    overflow-x: hidden; 
+    overflow-y: hidden;
+    padding-top: 60px; 
+    transition: 0.2s; 
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-right .5s;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .sidenavmenu {
+      display: inline-block;
+      margin-left: 80%;
+      color: white;
+      top: -50px;
+  }
+  .sidebarspeech{
+      padding: 20px;
+      color: grey;
+  }
+  .sidebaricon {
+      display: flex;
+      color: red;
+  }
+  .sidebaricons:hover {
+    opacity: 0.9;
+  }
+  
+  .tiktok:hover {
+    text-decoration: none !important;
+  }
+  .headerbottom {
+    font-size: 20px;
+    margin-left: 5%
+  }
+  .headerbottom:hover {
+    color: red;
+  }
+  .abouttext {
+    font-size: 15px;
+  }
+  .fa {
+      color: white;
+  }
+  .fa:hover {
+      color: red;
+      text-decoration: red;
+      opacity: 0.7;
+  }
+    i.fa{
+      font-size: 30px;
+      margin-left: 10%;
+      padding: 15%;
+  }
+  .headertext {
+    display: flex;
+    color: white;
+  }
+  .headerwholetext {
+    color: white;
+    margin-top: 10%;
+    margin-bottom: 50%;
+    margin-left: 10%;
+    margin-right: 20%;
+  }
+  .bottomtext {
+    margin-top: 23%;
+    font-size: 15px;
+  }
+  .box1 {
+    padding: 5%;
+  }
+  .risk {
+    color:  red;
+    font-size: 15px;
+  }
+  .rope {
+    font-size: 40px;
+  }
+  .tug {
+    font-size: 20px;
+    margin-left: 10%;
+    line-height: 2.0;
+  }
+  /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+  background-color: white;
+  width: 300px;
+  height: 430px;
+  border: 1px solid white;
+  margin-bottom: 5%;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side */
+.flip-box-front {
+  background-color: gold;
+  color: white;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: red;
+  color: white;
+  transform: rotateY(180deg);
+}
+.fourboxes {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.flip-box-inner {
+  margin-left: 10px;
+}
+
+.secondbox {
+  display: flex;
+  width: 100%;
+  margin-top: 1%;
+  justify-content: center;
+}
+.front {
+  margin-top: 50%;
+}
+.back {
+  padding: 10px 10px 10px 10px; 
+  margin-top: 20%;
+}
+.branch {
+  height: 100px;
+  border-radius: 50%;
+  width: 100px;
+}
+.thirdbox {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.fig {
+  margin-left: 5% !important;
+}
+.teammart {
+  font-size: 20px;
+   text-align: center;
+}
+.box3 {
+  padding: 5%;
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 5%;
+  width: 100%;
+}
+.followicons {
+  margin-left: 500px;
+}
+.footericons {
+  height: 100px;
+}
+ .farewell[type=text], .farewell[type=submit] {
+  width: 50%;
+  padding: 12px;
+  margin: 8px 0;
+  display: flex;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 2px solid red;
+  /* background-color: rgba(0, 0, 0, 0.4);
+  color: white; */
+
+}
+.farewell [type=checkbox] {
+  margin-top: 16px;
+}
+.farewell [type=submit] {
+  background-color: rgba(0, 0, 255, 0.65);
+  color: white;
+  border: none;
+}
+.farewell [type=submit]:hover {
+  opacity: 0.8;
+}
+
+.topbutton {
+  background-color: rgba(0, 0, 0, 0.45);
+  border: none;
+  color: white;
+  border-radius: 50%;
+  text-align: center !important;
+  border: 1px solid gold;
+  width: 60px;
+}
+.bit{
+  background-color: gold;
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 50px;
+  position: absolute;
+  color: white;;
+  margin-left: 70%;
+  width: 60px;
+  margin-top: -50px;
+}
+.fa-bars:hover {
+  color: white;
+}
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid red;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg);}
+  100% { -webkit-transform: rotate(360deg);}
+}
+@keyframes spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
+.animatebottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0}
+  to {bottom: 0px; opacity: 1;} }
+@keyframes animatebottom {
+  from { bottom:-100px; opacity:0}
+  to {bottom: 0px; opacity: 1;}
+}
+#mydiv {
+  display: none;
+  text-align: center;
+}
+@media screen and (max-width: 320px) {
+  .fourboxes {
+    display: block;
+    /* margin-left: -100px; */
+  }
+}
+@media screen and (max-width: 1024px) {
+  header {
+    height: 1250px;
+  }
+  .fourboxes {
+    display: block;
+    width: 100%;
+  }
+  .secondbox {
+    display: block;
+    margin-left: 25%;
+    height: 400px;
+  }
+  .flip-box {
+    width: 100%;
+  }
+  .thirdbox {
+    display: grid;
+  }
+  footer {
+    display: grid;
+  }
+}
+
+#ftco-loader {
+  position: fixed;
+  width: 96px;
+  height: 96px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.24);
+  border-radius: 16px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .2s ease-out, visibility 0s linear .2s;
+  -o-transition: opacity .2s ease-out, visibility 0s linear .2s;
+  transition: opacity .2s ease-out, visibility 0s linear .2s;
+  z-index: 1000;
+}
+
+#ftco-loader.fullscreen {
+  padding: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  background-color: #fff;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#ftco-loader.show {
+  -webkit-transition: opacity .4s ease-out, visibility 0s linear 0s;
+  -o-transition: opacity .4s ease-out, visibility 0s linear 0s;
+  transition: opacity .4s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}
+
+#ftco-loader .circular {
+  -webkit-animation: loader-rotate 2s linear infinite;
+  animation: loader-rotate 2s linear infinite;
+  position: absolute;
+  left: calc(50% - 24px);
+  top: calc(50% - 24px);
+  display: block;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+#ftco-loader .path {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  -webkit-animation: loader-dash 1.5s ease-in-out infinite;
+  animation: loader-dash 1.5s ease-in-out infinite;
+  stroke-linecap: round;
+}
+
+@-webkit-keyframes loader-rotate {
+  100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-rotate {
+  100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes loader-dash {
+  0% {
+      stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0;
+  }
+
+  50% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -35px;
+  }
+
+  100% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -136px;
+  }
+}
+
+@keyframes loader-dash {
+  0% {
+      stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0;
+  }
+
+  50% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -35px;
+  }
+
+  100% {
+      stroke-dasharray: 89, 200;
+      stroke-dashoffset: -136px;
+  }
+}
+
+
+
+
+
+
+
