@@ -77,7 +77,9 @@ header .logo a {
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   #main {
-    transition: margin-right .5s;
+    /* transition: margin-right .5s; */
+    width: 100%;
+    line-height: 1.6;
   }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -154,11 +156,9 @@ header .logo a {
   .rope {
     font-size: 40px;
   }
-  .tug {
-    font-size: 20px;
-    margin-left: 10%;
-    line-height: 2.0;
-  }
+ .mobile {
+   display: none;
+ }
   /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-box {
   background-color: white;
@@ -213,12 +213,16 @@ header .logo a {
 .flip-box-inner {
   margin-left: 10px;
 }
+.rebel {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
 .secondbox {
   display: flex;
-  width: 100%;
-  margin-top: 1%;
-  justify-content: center;
+  width: 90%;
+  margin-left: 0px;
 }
 .front {
   margin-top: 50%;
@@ -303,7 +307,7 @@ footer {
   color: white;;
   margin-left: 70%;
   width: 60px;
-  margin-top: -50px;
+  margin-top: -65px;
 }
 .fa-bars:hover {
   color: white;
@@ -350,23 +354,64 @@ footer {
   display: none;
   text-align: center;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 1024px) {
   .fourboxes {
+    display: inline-flex;
+    width: 100%;
+    /* height: 500px; */
+    margin: auto;
+  }
+  .rebel {
+    display: inline-flex;
+    margin: auto;
+  }
+  .mobile {
     display: block;
-    /* margin-left: -100px; */
+  }
+  .desktop {
+    display: none;
+  }
+  
+  .thirdbox {
+    display: flex;
   }
 }
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 1000px) {
   header {
-    height: 1250px;
+    height: 920px;
+  }
+  .mofo {
+    width: 100%;
+  }
+  .bit {
+    margin-left: 60%;
+    margin-top: ;
   }
   .fourboxes {
     display: block;
-    width: 100%;
+    width: 75%;
+  }
+  .rebel {
+    display: block;
+    width: 75%;
+    margin-left: 12.5%;
+  }
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
   }
   .secondbox {
     display: block;
-    margin-left: 25%;
+    width: 75%;
+  }
+  .flip-box {
+    height: 450px;
+  }
+  .secondbox {
+    display: block;
     height: 400px;
   }
   .flip-box {
@@ -377,6 +422,24 @@ footer {
   }
   footer {
     display: grid;
+  }
+}
+@media screen and (max-width: 320px) {
+  .fourboxes {
+    display: block;
+    /* margin-left: -100px; */
+  }
+  .flip-box {
+    height: 490px;
+  }
+  .bit {
+    margin-top: -100px;
+  }
+  header {
+    height: 1050px;
+  }
+  #main {
+    line-height: 1.5;
   }
 }
 
