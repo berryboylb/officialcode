@@ -11,22 +11,30 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script> 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>  
 </head>
-<body onload="myfunction()" style="margin: 0;">
-  <div class="preloader" id="p_loader">
-    <div class="lds-ripple">
-        <div></div>
-        <div></div>
+<body>
+  <!-- <div id="DivPreloader" class="div-preloader">
+    <div class="display-cell">
+      <div class="div-caption">
+        Your website name
+      </div>
+      <div class="cssload-thecube">
+        <div class="cssload-cube cssload-c1"></div>
+        <div class="cssload-cube cssload-c2"></div>
+        <div class="cssload-cube cssload-c4"></div>
+        <div class="cssload-cube cssload-c3"></div>
+      </div>
+      <div class="div-loading">
+        Loading website ...
+      </div>
     </div>
-</div>
-
-  <!-- <div id="loader"></div>
-   <div style="display: none;" id="mydiv" class="animate-bottom"> -->
+  </div> -->
+  
     <header>
       
             <nav>
                 <ul>
                     <li class="logo"><a href="index.html">Mart Online Logo</a></li>
-                    <li>
+                    <span  class="sidenavmenu" onclick="openNav()"><i class="fa fa-bars"></i></span>
                 </ul>
             </nav>
                         <div id="mySidenav" class="sidenav">
@@ -48,7 +56,7 @@
                           </div>
                           
                           <!-- Use any element to open the sidenav -->
-                          <span class="sidenavmenu" onclick="openNav()"><i style="margin-top: -50px;" class="fa fa-bars"></i></span>
+                         
                           <a name = "section4"></a>
                           <div id="main">
                             
@@ -56,7 +64,7 @@
                 <h1>HEY HAPPY FOLKS,</h1></br>
                 <div class="headertext">
                   <h4 class="mofo" style="border-top:1px solid red;width: 15%; margin-right: 2%;"></h4>
-                  <p> YOU WOULD BE HAPPIER TO KNOW THAT YOU CAN NOW EXPERIENCE PLENTIFUL AND BETTER VALUE BECAUSE MART IS COMING TO OFFER IT RIGHT AT YOUR DOORSTEP.</br></br></br><a style="color: red;" >-</a> <strong>MART</strong> provides you with remarkable and careful e-commerce experience amongst other services, that doesn't allow you to find any  buy value in form of products and services that suits your needs but also allows you to communicate your value to authentic audiences as a seller. </br></br></br> </p>
+                  <p> YOU WOULD BE HAPPIER TO KNOW THAT YOU CAN NOW EXPERIENCE PLENTIFUL AND BETTER VALUE BECAUSE MART IS COMING TO OFFER IT RIGHT AT YOUR DOORSTEP.</br></br></br><a style="color: red;" >-</a> <strong>MART</strong> provides you with remarkable and careful e-commerce experience amongst other services, that doesn't allow you to find and buy value in form of products and services that suits your needs but also allows you to communicate your value to authentic audiences as a seller. </br></br></br> </p>
                 </div>
                 <div>
                     <ul class="bottomtext">
@@ -119,16 +127,18 @@
               </div>
             </div></div> 
      
-          <div><div class="flip-box">
-          <div class="flip-box-inner">
-            <div class="flip-box-front">
-              <h2 class="front">Buy more </br> spend less </br> </br> <em style="color: rgba(255, 0, 0, 0.4);" class="mobile">(click on me)</em></br><em style="color: rgba(255, 0, 0, 0.4);" class="desktop">(Hover on me)</em></h2>
-            </div>
-            <div class="flip-box-back">
-              <h2 class="back">If you can't save, we would help you save by offering you relatable and authentic prices  for product offers.</h2>
-            </div>
+          <div class="braw">
+            <div><div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <h2 class="front">Buy more </br> spend less </br> </br> <em style="color: rgba(255, 0, 0, 0.4);" class="mobile">(click on me)</em></br><em style="color: rgba(255, 0, 0, 0.4);" class="desktop">(Hover on me)</em></h2>
+                </div>
+                <div class="flip-box-back">
+                  <h2 class="back">If you can't save, we would help you save by offering you relatable and authentic prices  for product offers.</h2>
+                </div>
+              </div>
+            </div></div>
           </div>
-        </div></div>
       </div>
         
     </section>
@@ -213,6 +223,5 @@
           </div>
           <button class="topbutton" onclick="topFunction()"  id="myBtn" title="Go to top on every page"> <i class="fa fa-arrow-up"></i> </button>
     </footer>
-  </div>
 </body>
 </html>

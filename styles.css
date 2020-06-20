@@ -16,7 +16,7 @@ li {
 
 
 header {
-    background-image: url(images/pic0.jpg);
+    background-image: url(images/IMG-20200609-WA0001.jpg);
     height: 950px;
     width: 100%;
     background-repeat: no-repeat;
@@ -27,13 +27,12 @@ header {
 }
 header .logo a {
   background-image: url(images/logo.png);
-  background-size: 80px;
+  background-size: 80%;
   background-repeat: no-repeat;
-  border-radius: 90%;
   display: inline-block;
-  height: 80px;
+  height: 150px;
   text-indent: -9999999px ;
-  width: 300px;
+  width:300px;
 }
 
 /* The side navigation menu */
@@ -91,7 +90,6 @@ header .logo a {
       display: inline-block;
       margin-left: 80%;
       color: white;
-      top: -50px;
   }
   .sidebarspeech{
       padding: 20px;
@@ -166,10 +164,11 @@ header .logo a {
   height: 430px;
   border: 1px solid white;
   margin-bottom: 5%;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  border-radius: 50px;
+  box-shadow: 3px solid black;
+  perspective: 1000px; 
 }
 
-/* This container is needed to position the front and back side */
 .flip-box-inner {
   position: relative;
   width: 100%;
@@ -197,11 +196,13 @@ header .logo a {
 .flip-box-front {
   background-color: gold;
   color: white;
+  border-radius: 50px;
 }
 
 /* Style the back side */
 .flip-box-back {
   background-color: red;
+  border-radius: 50px;
   color: white;
   transform: rotateY(180deg);
 }
@@ -209,9 +210,13 @@ header .logo a {
   display: flex;
   justify-content: center;
   width: 100%;
+ 
 }
 .flip-box-inner {
   margin-left: 10px;
+}
+.braw {
+  margin-left: 30px;
 }
 .rebel {
   display: flex;
@@ -355,6 +360,9 @@ footer {
   text-align: center;
 }
 @media screen and (max-width: 1024px) {
+  header .logo a {
+    background-size: 50%;
+  }
   .fourboxes {
     display: inline-flex;
     width: 100%;
@@ -377,20 +385,28 @@ footer {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 700px) {
   header {
     height: 980px;
+    background-position: center;
+  }
+  header .logo a {
+    background-size: 50%;
+    
+    height: 100px;
   }
   .mofo {
     width: 100%;
   }
   .bit {
     margin-left: 60%;
-    margin-top: ;
   }
   .fourboxes {
     display: block;
     width: 75%;
+  }
+  .braw {
+    margin-left: 0;
   }
   .rebel {
     display: block;
@@ -441,118 +457,45 @@ footer {
   #main {
     line-height: 1.5;
   }
+  .braw {
+    margin-left: 0;
+  }
 }
 
-#ftco-loader {
+.div-preloader {
   position: fixed;
-  width: 96px;
-  height: 96px;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.9);
-  -webkit-box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.24);
-  box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.24);
-  border-radius: 16px;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: opacity .2s ease-out, visibility 0s linear .2s;
-  -o-transition: opacity .2s ease-out, visibility 0s linear .2s;
-  transition: opacity .2s ease-out, visibility 0s linear .2s;
-  z-index: 1000;
-}
-
-#ftco-loader.fullscreen {
-  padding: 0;
-  left: 0;
+  margin: 0;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
+  display: table;
+  background-color: #6f2421;
+  z-index: 9999;
+}
+
+* {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
   background-color: #fff;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
 }
 
-#ftco-loader.show {
-  -webkit-transition: opacity .4s ease-out, visibility 0s linear 0s;
-  -o-transition: opacity .4s ease-out, visibility 0s linear 0s;
-  transition: opacity .4s ease-out, visibility 0s linear 0s;
-  visibility: visible;
-  opacity: 1;
-}
-
-#ftco-loader .circular {
-  -webkit-animation: loader-rotate 2s linear infinite;
-  animation: loader-rotate 2s linear infinite;
-  position: absolute;
-  left: calc(50% - 24px);
-  top: calc(50% - 24px);
-  display: block;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
-#ftco-loader .path {
-  stroke-dasharray: 1, 200;
-  stroke-dashoffset: 0;
-  -webkit-animation: loader-dash 1.5s ease-in-out infinite;
-  animation: loader-dash 1.5s ease-in-out infinite;
-  stroke-linecap: round;
-}
-
-@-webkit-keyframes loader-rotate {
-  100% {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
-  }
-}
-
-@keyframes loader-rotate {
-  100% {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes loader-dash {
-  0% {
-      stroke-dasharray: 1, 200;
-      stroke-dashoffset: 0;
-  }
-
-  50% {
-      stroke-dasharray: 89, 200;
-      stroke-dashoffset: -35px;
-  }
-
-  100% {
-      stroke-dasharray: 89, 200;
-      stroke-dashoffset: -136px;
-  }
-}
-
-@keyframes loader-dash {
-  0% {
-      stroke-dasharray: 1, 200;
-      stroke-dashoffset: 0;
-  }
-
-  50% {
-      stroke-dasharray: 89, 200;
-      stroke-dashoffset: -35px;
-  }
-
-  100% {
-      stroke-dasharray: 89, 200;
-      stroke-dashoffset: -136px;
-  }
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
 }
 
 
